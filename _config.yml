@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Treasurenet Documention
+description: Treasurenet proposes a solution for the critical lack of sustaining and tangible value in the crypto world. Our goal is the combine real world economic drivers and distributed ledger scalability. As a layer 1 protocol, TN will become a model for sustaining value in the fiat world and the digital world.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://treasurenetprotocol.github.io/
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
