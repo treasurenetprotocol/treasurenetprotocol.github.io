@@ -1,3 +1,17 @@
+---
+layout: default
+title: Further Examples of Use Cases using Treasurenet
+parent: dApps Under Development
+grand_parent: About Treasurenet
+nav_order: 3
+---
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 # Further Examples of Use Cases using Treasurenet
 
 ### Asset Financing Platform

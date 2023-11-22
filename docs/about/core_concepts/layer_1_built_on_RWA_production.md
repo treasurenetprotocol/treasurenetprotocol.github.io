@@ -3,7 +3,7 @@ layout: default
 title: Layer 1 built on RWA Production
 parent: Core Concepts
 grand_parent: About Treasurenet
-nav_order: 3
+nav_order: 1
 ---
 
 # Navigation Structure
