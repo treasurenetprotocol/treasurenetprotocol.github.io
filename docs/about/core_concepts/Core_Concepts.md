@@ -2,7 +2,7 @@
 layout: default
 title: Core Concepts
 parent: About Treasurenet
-nav_order: 3
+nav_order: 1
 has_children: true
 ---
 # Navigation Structure

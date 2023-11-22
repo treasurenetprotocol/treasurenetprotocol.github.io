@@ -3,7 +3,7 @@ layout: default
 title: TN Gateway and Tools
 parent: Core Concepts
 grand_parent: About Treasurenet
-nav_order: 4
+nav_order: 3
 ---
 # Navigation Structure
 {: .no_toc }
