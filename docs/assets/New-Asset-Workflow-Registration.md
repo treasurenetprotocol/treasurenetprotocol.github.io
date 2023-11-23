@@ -2,7 +2,7 @@
 layout: default
 title: New Asset Workflow Registration
 parent: Assets Production
-nav_order: 4
+nav_order: 5
 ---
 
 # Navigation Structure
