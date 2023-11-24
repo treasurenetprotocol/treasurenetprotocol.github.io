@@ -136,7 +136,7 @@ const RecordSchema = new mongoose.Schema({
     amount: Number,
     month: Number,
     uniqueId: {type: String, required: true},
-    status: {type: Number, default: dict.STATUS.UNUSED},  // 0:未使用 1：已使用
+    status: {type: Number, default: dict.STATUS.UNUSED},  // 0:available 1：taken
     timestamp: {type: Date, default: Date.now},
 });
 

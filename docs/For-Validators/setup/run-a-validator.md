@@ -117,7 +117,7 @@ First, if the validator is not running, try to start it using the following comm
 
 Wait for the node to update to the latest block (the time depends on the gap between your node and the latest block), then try to unjail your validator.
 
-You can refer to the section on[unjail your validator 章节](#unjail-validator)
+You can refer to the section on[unjail your validator](#unjail-validator)
 
 Finally, check that your validator's voting power is back to normal
 

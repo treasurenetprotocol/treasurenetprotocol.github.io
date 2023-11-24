@@ -36,13 +36,13 @@ You can also use the -h or --help command to get help information
 ```shell
                                   # ~/.treasurenetd
 |-- config
-|   |-- app.toml                  # 应用模块的配置文件
+|   |-- app.toml                  # Application configuration
 |   |-- client.toml   
     |-- genesis.json              # The genesis file
 	|-- node_key.json             # Private key to use for node authentication in the p2p protocol. 
 	|-- priv_validator_key.json   # Private key to use as a validator in the consensus protocol.      
-|   `-- config.toml               # 共识相关的配置文件
-|-- data                          # 节点所使用的数据库
+|   `-- config.toml               # Node configuration
+|-- data                          # Data directory
 
 ```
 
@@ -118,7 +118,7 @@ Make the necessary changes in the client.toml and then save it. For example, if 
 
 ### Options
 
-一些 treasurenetd 常用的 flag 如下：
+A few common treasurenetd flags are as follows:
 
 | Option            | Description                                | Type   | Default Value    |
 | ----------------- | ------------------------------------------ | ------ | ---------------- | --------- | ------ | ------ | --------- | ---- |

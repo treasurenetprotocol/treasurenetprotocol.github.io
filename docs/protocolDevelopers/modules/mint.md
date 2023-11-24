@@ -37,7 +37,7 @@ The target annual inflation rate is recalculated every cycle.
 
 ## Queries
 
-> treasurenetd query mint params --home --output json | jq 查询铸币参数
+> treasurenetd query mint params --home --output json | jq
 
 ```json
 {
@@ -52,6 +52,6 @@ The target annual inflation rate is recalculated every cycle.
 }
 ```
 
-> treasurenetd query mint annual-provisions 查询当前的铸币
+> treasurenetd query mint annual-provisions
 
 > 5000000000000000000.000000000000000000

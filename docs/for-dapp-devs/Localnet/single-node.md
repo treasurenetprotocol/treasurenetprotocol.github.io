@@ -131,8 +131,7 @@ Check the correctness of the genesis.json file:
 ```shell
     treasurenetd validate-genesis
 ```
-
-现在一切都设置好了，您可以最终启动您的节点。
+Now everything is set up, you can finally start your node.
 
 ```shell
     treasurenetd start
