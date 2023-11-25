@@ -184,7 +184,7 @@ The function NewParamChangeProposalHandler() in the corresponding params module 
 
 ### Transactions
 
-> treasurenetd tx gov submit-proposal - 提交提案和初始存款
+> treasurenetd tx gov submit-proposal
 
 - treasurened tx gov submit-proposal (proposal type>):
   - If the proposal type is empty, it means it is a text proposal.
@@ -245,8 +245,7 @@ $ treasurenetd tx gov submit-proposal community-pool-spend /root/proposal_commun
 confirm transaction before signing and broadcasting [y/N]: y
 ```
 
-> treasurenetd tx gov deposit [proposal-id] [deposit] - 为活跃提案存入代币
-> 用户可以提交存款交易来资助和支持积极的提案
+> treasurenetd tx gov deposit [proposal-id] [deposit]
 
 ```sh
 treasurenetd tx tx gov deposit 2 1unit
@@ -262,8 +261,7 @@ treasurenetd tx tx gov deposit 2 1unit
 confirm transaction before signing and broadcasting [y/N]: y
 ```
 
-> treasurenetd tx gov vote [proposal-id] [option] - 投票给一个积极的提案
-> 用户可以投票给一个活跃的提案。字段的有效值"option"可以是"yes"、"no"、"no_with_veto"和"abstain"
+> treasurenetd tx gov vote [proposal-id] [option]
 
 ```sh
 treasurenetd tx gov vote 2 yes
@@ -282,7 +280,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 ### Queries
 
-> treasurenetd query gov proposals --home -o json | jq - 查询所有提案
+> treasurenetd query gov proposals --home -o json | jq
 
 ```json
 {
@@ -384,7 +382,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 }
 ```
 
-> treasurenetd query gov proposal [proposal-id] --home --output json | jq - 通过提案的 ID 查询单个提案的详情
+> treasurenetd query gov proposal [proposal-id] --home --output json | jq
 
 ```json
 {
@@ -414,11 +412,11 @@ confirm transaction before signing and broadcasting [y/N]: y
 }
 ```
 
-> treasurenetd query gov tally [proposal-id] --home -o json | jq - 获取提案投票的总数
+> treasurenetd query gov tally [proposal-id] --home -o json | jq
 
 ```json
 {
-  "yes": "268000000000000000000", //票数和权重成正比，权重为多少票数就是多少
+  "yes": "268000000000000000000",
   "abstain": "0",
   "no": "0",
   "no_with_veto": "0"

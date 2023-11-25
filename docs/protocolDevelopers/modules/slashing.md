@@ -88,8 +88,8 @@ slash_fraction_downtime: The percentage of funds reduced when a validator is ina
 
 ### Transactions
 
-> treasurenetd tx slashing unjail - 释放验证器
-> 可以先通过 treasurenetd query staking validator [validator-address] --home --output json | jq 查看 validator 的状态
+> treasurenetd tx slashing unjail
+> treasurenetd query staking validator [validator-address] --home --output json | jq
 
 ```sh
 $ treasurenetd query staking validator \
@@ -130,7 +130,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 ### Queries
 
-> treasurenetd query slashing params --home --output json | jq - 查询惩罚参数
+> treasurenetd query slashing params --home --output json | jq
 
 ```json
 {

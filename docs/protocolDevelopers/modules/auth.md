@@ -45,17 +45,17 @@ The Account interface type is a data type of the auth module.
 type AccountI interface {
 	proto.Message
 
-	GetAddress() sdk.AccAddress        // Get account address 获取账户地址
-	SetAddress(sdk.AccAddress) error   // Set account address 设置账户地址
+	GetAddress() sdk.AccAddress        // Get account address
+	SetAddress(sdk.AccAddress) error   // Set account address
 
-	GetPubKey() cryptotypes.PubKey     // Get account public key 获取账户公钥
-	SetPubKey(cryptotypes.PubKey) error// Set account public key 设置账户公钥
+	GetPubKey() cryptotypes.PubKey     // Get account public key
+	SetPubKey(cryptotypes.PubKey) error// Set account public key
 
-	GetAccountNumber() uint64          // Get account number 获取账户号
-	SetAccountNumber(uint64) error     // Set account number 设置账户号
+	GetAccountNumber() uint64          // Get account number
+	SetAccountNumber(uint64) error     // Set account number
 
-	GetSequence() uint64               // Get account sequence 获取账户序列号
-	SetSequence(uint64) error          // Set account sequence 设置账户序列号
+	GetSequence() uint64               // Get account sequence
+	SetSequence(uint64) error          // Set account sequence
 
 	// Ensure that account implements stringer
 	String() string
@@ -184,7 +184,7 @@ The auth module provides AnteDecorators that are recursively chained together in
 }
 ```
 
-> treasurenetd query auth params --home -o json | jq - auth 模块的参数
+> treasurenetd query auth params --home -o json | jq
 
 ```json
 {
