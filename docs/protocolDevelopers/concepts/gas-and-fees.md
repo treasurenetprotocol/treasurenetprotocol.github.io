@@ -51,7 +51,7 @@ To ignore the gas consumption of the SDK, we reset the transaction GasMeter coun
 
 ### AnteHandler
 
-The [AnteHandler](https://docs.cosmos.network/main/basics/gas-fees.html#antehandler) in the Cosmos SDK performs basic checks before transaction execution. These checks typically include signature verification, transaction field validation, transaction fees, etc.
+The [AnteHandler](https://docs.cosmos.network/v0.45/modules/auth/03_antehandlers.html) in the Cosmos SDK performs basic checks before transaction execution. These checks typically include signature verification, transaction field validation, transaction fees, etc.
 
 Regarding gas consumption and fees, the AnteHandler checks if the user has sufficient balance to pay for the transaction cost (amount plus fees) and whether the gas limit defined in the message is greater than or equal to the inherent gas calculation of the message.
 
