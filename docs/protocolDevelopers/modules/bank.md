@@ -55,7 +55,7 @@ Based on the functionalities provided by Keeper, it is easy to implement the pro
 
 ### Transactions
 
-> treasurenetd tx bank send [from_address] [to_address] [amount] --chain-id testid --fees [^fees] --gas auto [^gas] --keyring-backend test --发送资金
+> treasurenetd tx bank send [from_address] [to_address] [amount] --chain-id testid --fees [^fees] --gas auto [^gas] --keyring-backend test
 > [^fees]: Fees to pay along with transaction.
 > [^gas]: gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default 200000).
 
@@ -69,7 +69,7 @@ Based on the functionalities provided by Keeper, it is easy to implement the pro
 
 ### Queries
 
-> treasurenetd query bank balances [address] --output json | jq --查询指定账户下的 token
+> treasurenetd query bank balances [address] --output json | jq
 
 ```json
 {
@@ -102,7 +102,7 @@ Based on the functionalities provided by Keeper, it is easy to implement the pro
 }
 ```
 
-> treasurenetd query bank total --home /data/mytestnet/.treasurenetd/ --output json | jq --检查 token 的总供应量
+> treasurenetd query bank total --home /data/mytestnet/.treasurenetd/ --output json | jq
 
 ```json
 {

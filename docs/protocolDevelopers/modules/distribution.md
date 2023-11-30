@@ -99,7 +99,7 @@ $ treasurenetd tx distribution withdraw-all-rewards \
 confirm transaction before signing and broadcasting [y/N]: y
 ```
 
-> treasurenetd tx distribution withdraw-rewards [validator_address] - 从给定的验证者地址提取奖励
+> treasurenetd tx distribution withdraw-rewards [validator_address]
 > The principal can withdraw rewards from specific validators.
 
 > Validators can extract commissions by adding the commission flag, in addition to rewards --commission
