@@ -150,7 +150,6 @@ confirm transaction before signing and broadcasting [y/N]: y
 ```
 
 > treasurenetd tx staking unbond [validator-address] [amount] - Unbond shares from a validator
-> 这里需要注意的是，在解绑委托后，不会立即生效，因为我们有个参数 unbonding_time(解绑时间)，资金只有在 unbonding_time 通过后才能生效
 
 ```sh
 treasurenetd tx staking unbond treasurenetvaloper1wf78qmzhfsjndy3v6wsdxjfqnmwnyy2gzs46zq 10unit
@@ -167,8 +166,7 @@ treasurenetd tx staking unbond treasurenetvaloper1wf78qmzhfsjndy3v6wsdxjfqnmwnyy
 confirm transaction before signing and broadcasting [y/N]: y
 ```
 
-> treasurenetd tx staking redelegate [validator-address] [validator-address2] [amount] - 将代币从一个验证者重新委托给另一个验证者
-> 重新绑定操作需要注意几个方面:
+> treasurenetd tx staking redelegate [validator-address] [validator-address2] [amount]
 
 1. When a user agrees to redelegate during the unbonding process, they need to wait until the account's unbonding is complete before performing the redelegation.
 
@@ -193,7 +191,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 ### Queries
 
-> treasurenetd query staking validators --home --output json | jq - 查询所有验证者
+> treasurenetd query staking validators --home --output json | jq
 
 ```json
 {
@@ -239,7 +237,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 }
 ```
 
-> treasurenetd query staking validator [validator-address] --home --output json | jq - 查看质押 validator 的情况
+> treasurenetd query staking validator [validator-address] --home --output json | jq
 
 ```json
 {
@@ -277,7 +275,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 }
 ```
 
-> treasurenetd query staking delegations [delegator-address] --home --output json | jq - 根据地址查询委托详情
+> treasurenetd query staking delegations [delegator-address] --home --output json | jq
 
 ```json
 {
@@ -302,7 +300,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 }
 ```
 
-> treasurenetd query staking delegations-to [validator-address] --home --output json | jq - 查询一个验证者的所有委托
+> treasurenetd query staking delegations-to [validator-address] --home --output json | jq
 
 ```json
 {
