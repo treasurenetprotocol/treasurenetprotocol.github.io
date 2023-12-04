@@ -9,8 +9,11 @@ favicon_ico: "/img/favicon.ico"
 
 url: https://treasurenetprotocol.github.io/
 
-aux_links:
-  Back to website: https://treasurenet.io
+aux_links:   
+   <img src='/img/twitter-x-line.png' alt='twitter'>: https://twitter.com/treasurenet_io
+   <img src='/img/discord-line.png' alt='twitter'>: https://discord.com/invite/treasurenet
+   <img src='/img/github-fill.png' alt='twitter'>: https://github.com/treasurenetprotocol
+  
 
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
